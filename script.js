@@ -38,12 +38,24 @@ function calculateTip() {
     
 }
 
+function resetCalculator() {
+    document.getElementById("billAmount").value = "";
+    document.getElementById("serviceQuality").value = "0";
+    document.getElementById("totalPeople").value = "";
+    document.getElementById("each").style.display = "none";
+    document.getElementById("totalTip").style.display = "none";
+}
+
 // Hide the tip amount on load
 document.getElementById("totalTip").style.display = "none";
 document.getElementById("each").style.display = "none";
 
 // Clicking the button calls our custom function
 document.getElementById("calculate").onclick = function() { calculateTip(); };
+
+// Clicking the reset button resets the calculator
+document.getElementById("reset").onclick = function() { resetCalculator(); };
+
 
 
 

@@ -90,6 +90,10 @@ button:active {
     display: block;
 }
 
+#reset{
+    margin-top: 10px;
+}
+
 
 
 
